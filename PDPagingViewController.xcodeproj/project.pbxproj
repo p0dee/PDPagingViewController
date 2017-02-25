@@ -12,6 +12,7 @@
 		021993991E61710B00AFC436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021993971E61710B00AFC436 /* Main.storyboard */; };
 		0219939B1E61710B00AFC436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0219939A1E61710B00AFC436 /* Assets.xcassets */; };
 		0219939E1E61710B00AFC436 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0219939C1E61710B00AFC436 /* LaunchScreen.storyboard */; };
+		021993A61E6172F100AFC436 /* PDPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021993A51E6172F100AFC436 /* PDPagingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0219939A1E61710B00AFC436 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0219939D1E61710B00AFC436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0219939F1E61710B00AFC436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		021993A51E6172F100AFC436 /* PDPagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDPagingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				021993931E61710B00AFC436 /* AppDelegate.swift */,
 				021993951E61710B00AFC436 /* ViewController.swift */,
+				021993A51E6172F100AFC436 /* PDPagingViewController.swift */,
 				021993971E61710B00AFC436 /* Main.storyboard */,
 				0219939A1E61710B00AFC436 /* Assets.xcassets */,
 				0219939C1E61710B00AFC436 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				021993961E61710B00AFC436 /* ViewController.swift in Sources */,
+				021993A61E6172F100AFC436 /* PDPagingViewController.swift in Sources */,
 				021993941E61710B00AFC436 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
