@@ -39,11 +39,11 @@ class PDPagingViewController: UIViewController {
     }
     
     func setUpViewControllers() {
-        viewControllers.forEach {
-            self.addChildViewController($0)
-            view.addSubview($0.view)
-            //TODO: 以下実装追加
-            // https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/ImplementingaContainerViewController.html
+        for (i, c) in viewControllers.enumerated() {
+            self.addChildViewController(c)
+            c.view.frame = self.view.bounds.offsetBy(dx: CGFloat(i) * self.view.bounds.width, dy: 0)
+            scrollView.addSubview(c.view)
+            c.didMove(toParentViewController: self)
         }
     }
     
