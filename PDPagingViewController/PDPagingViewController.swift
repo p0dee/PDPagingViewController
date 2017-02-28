@@ -11,6 +11,7 @@ import UIKit
 class PDPagingViewController: UIViewController {
     
     var viewControllers: [UIViewController]
+    var menuBar = PDPagingMenuBar()
     
     lazy var scrollView = UIScrollView()
     
@@ -36,6 +37,11 @@ class PDPagingViewController: UIViewController {
         var contentSize = view.bounds.size
         contentSize.width *= CGFloat(viewControllers.count)
         scrollView.contentSize = contentSize
+        menuBar.backgroundColor = UIColor.lightGray
+        menuBar.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 64)
+        menuBar.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
+        menuBar.titles = viewControllers.map({ return $0.title ?? "" })
+        view.addSubview(menuBar)
     }
     
     func setUpViewControllers() {
