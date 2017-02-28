@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         // Do any additional setup after loading the view, typically from a nib.
+        let vc = PDPagingViewController()
+        var vcs = [UIViewController]()
+        for _ in 0..<5 {
+            vcs.append(UITableViewController())
+        }
+        vc.viewControllers = vcs
+        self.present(vc, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
