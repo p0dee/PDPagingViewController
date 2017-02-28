@@ -11,6 +11,7 @@ import UIKit
 class PDPagingMenuBar: UIView {
     
     private lazy var scrollView = UIScrollView()
+    var titles = [String]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,11 +20,6 @@ class PDPagingMenuBar: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    convenience init(titles: [String]) {
-        self.init()
-        setUpViews()
     }
     
     private func setUpViews() {
