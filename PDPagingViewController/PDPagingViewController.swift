@@ -33,6 +33,7 @@ class PDPagingViewController: UIViewController {
     func setUpViews() {
         scrollView.frame = view.bounds
         scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        scrollView.isPagingEnabled = true
         view.addSubview(scrollView)
         var contentSize = view.bounds.size
         contentSize.width *= CGFloat(viewControllers.count)
